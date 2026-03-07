@@ -6,7 +6,7 @@ const isMenuOpen = ref(false)
 </script>
 
 <template>
-  <header class="fixed top-0 left-0 right-0 z-50 bg-avenure-dark/80 backdrop-blur-md border-b border-white/5">
+  <header class="sticky top-0 z-50 bg-avenure-dark/95 backdrop-blur-md border-b border-white/5">
     <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="/" class="flex items-center gap-2 group">
         <LogoAvenure class="w-10 h-10 text-avenure-primary group-hover:animate-glow-pulse transition-all" />
@@ -14,14 +14,15 @@ const isMenuOpen = ref(false)
       </a>
 
       <div class="hidden md:flex items-center gap-8">
-        <a href="#servicos" class="text-gray-300 hover:text-avenure-primary transition-colors">Serviços</a>
-        <a href="#sobre" class="text-gray-300 hover:text-avenure-primary transition-colors">Sobre</a>
+        <a href="#inicio" class="text-gray-300 hover:text-avenure-primary transition-colors">Início</a>
+        <a href="#servicos" class="text-gray-300 hover:text-avenure-primary transition-colors">Produtos</a>
+        <a href="#como-contratar" class="text-gray-300 hover:text-avenure-primary transition-colors">Como Contratar</a>
         <a href="#contato" class="text-gray-300 hover:text-avenure-primary transition-colors">Contato</a>
         <a
           href="#contato"
-          class="px-5 py-2.5 rounded-lg bg-avenure-primary/20 text-avenure-primary border border-avenure-primary/50 hover:bg-avenure-primary/30 hover:shadow-glow transition-all"
+          class="px-5 py-2.5 rounded-lg bg-avenure-primary text-avenure-dark font-semibold hover:shadow-glow transition-all"
         >
-          Fale conosco
+          Agendar Reunião
         </a>
       </div>
 
@@ -47,15 +48,16 @@ const isMenuOpen = ref(false)
     >
       <div v-if="isMenuOpen" class="md:hidden px-6 py-4 border-t border-white/5 bg-avenure-darker/95">
         <div class="flex flex-col gap-4">
-          <a href="#servicos" class="text-gray-300 hover:text-avenure-primary" @click="isMenuOpen = false">Serviços</a>
-          <a href="#sobre" class="text-gray-300 hover:text-avenure-primary" @click="isMenuOpen = false">Sobre</a>
+          <a href="#inicio" class="text-gray-300 hover:text-avenure-primary" @click="isMenuOpen = false">Início</a>
+          <a href="#servicos" class="text-gray-300 hover:text-avenure-primary" @click="isMenuOpen = false">Produtos</a>
+          <a href="#como-contratar" class="text-gray-300 hover:text-avenure-primary" @click="isMenuOpen = false">Como Contratar</a>
           <a href="#contato" class="text-gray-300 hover:text-avenure-primary" @click="isMenuOpen = false">Contato</a>
           <a
             href="#contato"
-            class="px-5 py-2.5 rounded-lg bg-avenure-primary/20 text-avenure-primary border border-avenure-primary/50 text-center"
+            class="px-5 py-2.5 rounded-lg bg-avenure-primary text-avenure-dark font-semibold text-center"
             @click="isMenuOpen = false"
           >
-            Fale conosco
+            Agendar Reunião
           </a>
         </div>
       </div>

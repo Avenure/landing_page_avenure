@@ -1,124 +1,81 @@
 <script setup lang="ts">
-const segments = [
+const products = [
   {
-    title: 'Varejo',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-cyan/30',
-    slug: 'varejo',
+    title: 'Criação de Sites',
+    description: 'Sites profissionais, institucionais e e-commerce com design moderno.',
+    icon: '🌐',
+    slug: 'sites',
   },
   {
-    title: 'Restaurante',
-    image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-teal/30',
-    slug: 'restaurante',
+    title: 'Criação de Aplicativos',
+    description: 'Apps nativos e cross-platform para iOS e Android.',
+    icon: '📱',
+    slug: 'apps',
   },
   {
-    title: 'Autopeças',
-    image: 'https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-cyan/30',
-    slug: 'autopecas',
+    title: 'Sistemas sob Medida',
+    description: 'ERPs, CRMs e sistemas empresariais para automação.',
+    icon: '⚙️',
+    slug: 'sistemas',
   },
   {
-    title: 'Farmácia',
-    image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-indigo/30',
-    slug: 'farmacia',
+    title: 'Criação de Dashboards',
+    description: 'Painéis visuais para monitorar métricas e tomar decisões baseadas em dados.',
+    icon: '📊',
+    slug: 'dashboards',
   },
   {
-    title: 'Material de Construção',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-teal/30',
-    slug: 'construcao',
-  },
-  {
-    title: 'Moda',
-    image: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-blue/30',
-    slug: 'moda',
-  },
-  {
-    title: 'Petshop',
-    image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-cyan/30',
-    slug: 'petshop',
-  },
-  {
-    title: 'Distribuidora',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-indigo/30',
-    slug: 'distribuidora',
-  },
-  {
-    title: 'Serviços',
-    image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-cyan/30',
-    slug: 'servicos',
-  },
-  {
-    title: 'Ótica',
-    image: 'https://images.unsplash.com/photo-1574258495973-f010dfbb5371?w=400&h=300&fit=crop',
-    bgColor: 'bg-avenure-segment-indigo/30',
-    slug: 'otica',
+    title: 'Consultoria Tech',
+    description: 'Arquitetura, estratégia e escalabilidade digital.',
+    icon: '🎯',
+    slug: 'consultoria',
   },
 ]
-
-function goToSegment(slug: string) {
-  // Navegar para página do segmento ou abrir modal
-  window.location.hash = `#segmento-${slug}`
-}
 </script>
 
 <template>
-  <section id="servicos" class="py-24 px-6">
+  <section id="servicos" class="py-24 px-6 bg-avenure-darker/50">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 max-w-4xl mx-auto leading-tight">
-          Encontre aqui o seu <span class="text-avenure-primary underline decoration-avenure-primary/50 underline-offset-4">segmento</span> e descubra o que a <span class="text-avenure-primary underline decoration-avenure-primary/50 underline-offset-4">Avenure</span> pode fazer pelo seu negócio.
+        <p class="text-avenure-primary text-sm font-medium mb-2">✦ Produtos e Serviços</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          O que oferecemos
         </h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">
+          Soluções completas em software para impulsionar seu negócio no mundo digital.
+        </p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         <article
-          v-for="(segment, index) in segments"
+          v-for="(product, index) in products"
           :key="index"
-          class="group relative rounded-2xl overflow-hidden border border-white/5 hover:border-avenure-primary/30 transition-all duration-300 hover:shadow-glow hover:scale-[1.02]"
-          :class="segment.bgColor"
+          class="group p-6 rounded-2xl bg-avenure-dark/80 border border-white/5 hover:border-avenure-primary/30 transition-all duration-300 hover:shadow-glow flex flex-col"
         >
-          <!-- Ícone de pasta no canto -->
-          <div class="absolute top-3 left-3 z-10 opacity-80">
-            <svg class="w-6 h-6 text-avenure-dark" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+          <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">{{ product.icon }}</div>
+          <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-avenure-primary transition-colors">
+            {{ product.title }}
+          </h3>
+          <p class="text-gray-400 text-sm mb-4 flex-grow">{{ product.description }}</p>
+          <a
+            href="#contato"
+            class="text-avenure-primary text-sm font-medium hover:underline inline-flex items-center gap-1 mt-auto"
+          >
+            Saiba mais
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
-          </div>
-
-          <!-- Área da imagem com recorte orgânico -->
-          <div class="relative h-32 md:h-40 overflow-hidden">
-            <img
-              :src="segment.image"
-              :alt="segment.title"
-              class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
-            />
-            <!-- Gradiente para transição suave com o fundo -->
-            <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/60 to-transparent" />
-          </div>
-
-          <!-- Conteúdo do card -->
-          <div class="p-4 pb-5">
-            <h3 class="text-base md:text-lg font-semibold text-white mb-3 line-clamp-2">
-              {{ segment.title }}
-            </h3>
-            <button
-              type="button"
-              class="text-white font-medium text-sm hover:text-avenure-primary transition-colors flex items-center gap-1"
-              @click="goToSegment(segment.slug)"
-            >
-              Saiba mais!
-              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
+          </a>
         </article>
+      </div>
+
+      <div class="text-center mt-12">
+        <a
+          href="#contato"
+          class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-avenure-primary text-avenure-dark font-semibold hover:shadow-glow-lg transition-all"
+        >
+          Agendar Reunião
+        </a>
       </div>
     </div>
   </section>

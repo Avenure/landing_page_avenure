@@ -12,6 +12,16 @@
   }
 }
 
+/* Marquee de tecnologias */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-scroll {
+  animation: marquee-scroll 35s linear infinite;
+}
+
 /* Gradiente radial sutil no fundo */
 .bg-avenure-gradient {
   background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0, 228, 255, 0.08) 0%, transparent 50%),
