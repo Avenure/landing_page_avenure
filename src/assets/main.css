@@ -19,7 +19,7 @@
 }
 
 .animate-marquee-scroll {
-  animation: marquee-scroll 35s linear infinite;
+  animation: marquee-scroll 90s linear infinite;
 }
 
 /* Gradiente radial sutil no fundo */

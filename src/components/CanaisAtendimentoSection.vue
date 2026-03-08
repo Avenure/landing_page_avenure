@@ -22,11 +22,11 @@ const channels = [
 </script>
 
 <template>
-  <section class="py-24 px-6 bg-avenure-darker/50">
+  <section class="py-24 md:py-32 px-6 md:px-10 bg-avenure-darker/50">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
+      <div class="text-center mb-16 md:mb-20">
         <p class="text-avenure-primary text-sm font-medium mb-2">✦ Canais de Atendimento</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
           Suporte aos Clientes Avenure
         </h2>
         <p class="text-gray-400 max-w-2xl mx-auto">
@@ -34,7 +34,7 @@ const channels = [
         </p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
         <article
           v-for="(channel, index) in channels"
           :key="index"

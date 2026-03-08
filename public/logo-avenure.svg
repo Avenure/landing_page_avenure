@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Logo "A" estilizado - pernas duplas com barra ondulada -->
+  <path d="M14 42 L24 6 L34 42" stroke="#00E4FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M17 40 L24 8 L31 40" stroke="#00E4FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  <!-- Barra horizontal ondulada -->
+  <path d="M18 28 Q22 26 24 28 Q26 30 30 28" stroke="#00E4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -2,21 +2,21 @@
 </script>
 
 <template>
-  <section id="contato" class="py-24 px-6 bg-avenure-darker/50">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+  <section id="contato" class="py-24 md:py-32 px-6 md:px-10 bg-avenure-darker/50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
         Vamos conversar?
       </h2>
-      <p class="text-gray-400 text-lg mb-8">
+      <p class="text-gray-400 text-lg md:text-xl mb-10">
         Agende uma reunião ou inicie agora mesmo uma conversa com nossa equipe Avenure.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a
+        <!-- <a
           href="#contato"
           class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-avenure-primary text-avenure-dark font-semibold hover:shadow-glow-lg transition-all"
         >
           Agendar Reunião
-        </a>
+        </a> -->
         <a
           href="https://wa.me/5511999999999"
           target="_blank"

@@ -7,9 +7,9 @@ const isMenuOpen = ref(false)
 
 <template>
   <header class="sticky top-0 z-50 bg-avenure-dark/95 backdrop-blur-md border-b border-white/5">
-    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <nav class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
       <a href="/" class="flex items-center gap-2 group">
-        <LogoAvenure class="w-10 h-10 text-avenure-primary group-hover:animate-glow-pulse transition-all" />
+        <LogoAvenure class="w-[50px] h-[50px] text-avenure-primary group-hover:animate-glow-pulse transition-all" />
         <span class="text-xl font-semibold text-white group-hover:text-avenure-primary transition-colors">avenure</span>
       </a>
 

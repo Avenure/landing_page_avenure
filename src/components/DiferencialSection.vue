@@ -2,12 +2,12 @@
 </script>
 
 <template>
-  <section class="py-24 px-6 bg-avenure-darker/50">
+  <section class="py-24 md:py-32 px-6 md:px-10 bg-avenure-darker/50">
     <div class="max-w-7xl mx-auto">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="grid lg:grid-cols-2 gap-12 md:gap-20 items-center">
         <div>
           <p class="text-avenure-primary text-sm font-medium mb-2">✦ Nosso Diferencial</p>
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
             Vestimos a camisa da sua empresa
           </h2>
           <p class="text-gray-400 mb-6 leading-relaxed">
@@ -29,8 +29,12 @@
           </ul>
         </div>
         <div class="relative">
-          <div class="aspect-video rounded-2xl bg-avenure-primary/10 border border-avenure-primary/20 flex items-center justify-center">
-            <span class="text-6xl">💻</span>
+          <div class="rounded-2xl overflow-hidden border border-avenure-primary/20 shadow-glow h-72 sm:h-80 lg:h-96">
+            <img
+              src="/camisa-avenure.png"
+              alt="Avenure - Vestimos a camisa da sua empresa"
+              class="w-full h-full object-cover object-top"
+            />
           </div>
         </div>
       </div>

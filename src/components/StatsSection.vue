@@ -1,3 +1,5 @@
+<!-- NAO ESTA EM USO POR ENQUANTO -->
+
 <script setup lang="ts">
 const stats = [
   {

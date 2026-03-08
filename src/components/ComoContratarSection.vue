@@ -24,11 +24,11 @@ const steps = [
 </script>
 
 <template>
-  <section id="como-contratar" class="py-24 px-6">
+  <section id="como-contratar" class="py-24 md:py-32 px-6 md:px-10">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
+      <div class="text-center mb-16 md:mb-20">
         <p class="text-avenure-primary text-sm font-medium mb-2">✦ Processo</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
           Como contratar a Avenure
         </h2>
         <p class="text-gray-400 max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ const steps = [
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
         <article
           v-for="(step, index) in steps"
           :key="index"
@@ -48,14 +48,14 @@ const steps = [
         </article>
       </div>
 
-      <div class="text-center mt-12">
+      <!-- <div class="text-center mt-12">
         <a
           href="#contato"
           class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-avenure-primary text-avenure-dark font-semibold hover:shadow-glow-lg transition-all"
         >
           Agendar Reunião
         </a>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

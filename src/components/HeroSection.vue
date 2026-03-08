@@ -3,7 +3,7 @@ import LogoAvenure from './LogoAvenure.vue'
 </script>
 
 <template>
-  <section id="inicio" class="relative min-h-[90vh] flex flex-col items-center justify-center px-6 pt-32 pb-20 overflow-hidden">
+  <section id="inicio" class="relative min-h-[92vh] flex flex-col items-center justify-center px-6 md:px-10 pt-32 md:pt-40 pb-28 overflow-hidden">
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
       <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-avenure-primary/5 rounded-full blur-3xl animate-float" />
       <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-avenure-primary/5 rounded-full blur-3xl animate-float" style="animation-delay: -3s" />
@@ -16,12 +16,12 @@ import LogoAvenure from './LogoAvenure.vue'
       </p>
       <p class="text-gray-500 text-sm mb-4">Não importa seu país. Bem-vindo a bordo!</p>
 
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
         Desenvolvendo novas ideias em
         <span class="text-avenure-primary block mt-2">sites e apps · sistemas · automações</span>
       </h1>
 
-      <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+      <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
         Uma verdadeira evolução em como você se conecta com seus clientes. Nascemos para desenvolver ao mundo novos projetos e soluções em software.
       </p>
 
@@ -36,7 +36,6 @@ import LogoAvenure from './LogoAvenure.vue'
           href="#contato"
           class="px-8 py-4 rounded-xl border-2 border-avenure-primary/50 text-avenure-primary hover:bg-avenure-primary/10 transition-all duration-300 inline-flex items-center justify-center gap-2"
         >
-          <LogoAvenure class="w-6 h-6" />
           Agendar Reunião
         </a>
       </div>

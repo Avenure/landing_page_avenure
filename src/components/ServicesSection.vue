@@ -34,9 +34,9 @@ const products = [
 </script>
 
 <template>
-  <section id="servicos" class="py-24 px-6 bg-avenure-darker/50">
+  <section id="servicos" class="py-24 md:py-32 px-6 md:px-10 bg-avenure-darker/50">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-16">
+      <div class="text-center mb-16 md:mb-20">
         <p class="text-avenure-primary text-sm font-medium mb-2">✦ Produtos e Serviços</p>
         <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
           O que oferecemos
@@ -46,11 +46,11 @@ const products = [
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 md:gap-10">
         <article
           v-for="(product, index) in products"
           :key="index"
-          class="group p-6 rounded-2xl bg-avenure-dark/80 border border-white/5 hover:border-avenure-primary/30 transition-all duration-300 hover:shadow-glow flex flex-col"
+          class="group px-8 py-6 md:p-8 rounded-2xl bg-avenure-dark/80 border border-white/5 hover:border-avenure-primary/30 transition-all duration-300 hover:shadow-glow flex flex-col"
         >
           <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">{{ product.icon }}</div>
           <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-avenure-primary transition-colors">
@@ -69,14 +69,14 @@ const products = [
         </article>
       </div>
 
-      <div class="text-center mt-12">
+      <!-- <div class="text-center mt-14 md:mt-20">
         <a
           href="#contato"
           class="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-avenure-primary text-avenure-dark font-semibold hover:shadow-glow-lg transition-all"
         >
           Agendar Reunião
         </a>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

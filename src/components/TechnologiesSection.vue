@@ -9,7 +9,6 @@ const technologies = [
   { name: 'React Native', logo: 'https://cdn.simpleicons.org/react/61DAFB', slug: 'reactnative' },
   { name: 'Node.js', logo: 'https://cdn.simpleicons.org/nodedotjs/339933', slug: 'nodejs' },
   { name: 'Next.js', logo: 'https://cdn.simpleicons.org/nextdotjs/000000', slug: 'nextjs' },
-  { name: 'Nuxt', logo: '/logos/nuxt.png', slug: 'nuxt' },
   { name: 'NestJS', logo: 'https://cdn.simpleicons.org/nestjs/E0234E', slug: 'nestjs' },
   { name: 'Express', logo: 'https://cdn.simpleicons.org/express/000000', slug: 'express' },
   { name: 'Gatsby', logo: 'https://cdn.simpleicons.org/gatsby/663399', slug: 'gatsby' },
@@ -19,7 +18,7 @@ const technologies = [
 </script>
 
 <template>
-  <section class="py-16 px-6 border-t border-b border-white/5 overflow-hidden">
+  <section class="py-16 md:py-20 px-6 md:px-10 border-t border-b border-white/5 overflow-hidden">
     <p class="text-center text-gray-500 text-sm mb-10">
       Tecnologias JavaScript e TypeScript
     </p>
